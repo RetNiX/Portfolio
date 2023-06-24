@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joni.G's Website Portfolio</title>
+        <!-- Bootsstrap CSS -->
+        <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+        <!-- Personal CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Font-Awesome CSS -->
+        <link rel="stylesheet" href="./assets/css/font-awesome.css">
+    </head>
+
+    <body>
+        <!-- NavBar -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark menu shadow fixed-top">
+                <div class="collapse navbar-collapse w-100 order-1 order-md-0 order-sm-1" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+                    <a class="mx-auto" href="#">
+                        <img src="./images/Logo.png" width="120" height="80" class="rounded-circle">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse w-100 order-2 order-md-2" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Main Section -->
+        <main>
+            <!-- Intro Section -->
+            <section class="d-flex align-items-center vh-100" id="home">
+                <div class="container">
+                    <div class="container-fluid hero-video">
+                        <video autoplay muted loop id="myVideo" class="w-100">
+                            <source src="./images/purpleWater.mov" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="px-4 text-center text-light py-5 my-5">
+                        <p class="lead mb-2 my-5">Hello there <i class="fa-solid fa-hand-spock"></i>, my name is...
+                        </p>
+                        <h1 class="display-2 fw-bold text-light neon" id="myName"></h1>
+                        <div class="col-lg-6 col-md-6 col-sm-6 mx-auto">
+                            <p class="lead mb-3 fs-4">and i am a passionate, hardworking and in progress to become
+                                a</p>
+                            <p class="lead mb-4 fs-4">noob Full Stack Developer.</p>
+                        </div>
+                        <div class="container">
+                            <a type="button" href="#contact"
+                                class="btn btn-secondary c-btn c-btn-shine c-btn-ghost c-btn-main mb-5">Get
+                                In
+                                Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-6 col-sm-12 order-sm-1 order-2">
+                            <h2 class="gradient-text neon mt-sm-5 mb-4">A little About me,</h2>
+                            <p>Everything started when i was 14 years old, when i first encountered the term Private
+                                Servers in video games. Since then, i have fallen in love with coding and programming in
+                                general. Even volunteered to program simple NPCs and maps in a private server of
+                                MapleStory.</p>
+                            <p>Sicne then, my passion only grew stronger, and now i am on my path to become a A
+                                full-fledged Software Developer.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12 order-sm-2">
+                            <div class="container mb-5 mt-5">
+                                <div class="card">
+                                    <h5 class="card-header text-center fs-3">My Skills</h5>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Some of the technologies i have acquired over the
+                                            years...
+                                        </h5>
+                                        <p class="card-text">
+                                        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2">
+                                            <div class="col"><img src="./images/HTML5-Logo.svg" height="70" width="70">
+                                            </div>
+                                            <div class="col"><img src="./images/CSS3-Logo.svg" height="70" width="70">
+                                            </div>
+                                            <div class="col"><img src="./images/JS-Logo.svg" height="70" width="70">
+                                            </div>
+                                            <div class="col"><img src="./images/TS-Logo.svg" height="70" width="70">
+                                            </div>
+                                        </div>
+                                        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 pt-4">
+                                            <div class="col"><img src="./images/Gitbash-Logo.svg" height="70"
+                                                    width="70"></div>
+                                            <div class="col"><img src="./images/Gitlab-Logo.svg" height="70" width="70">
+                                            </div>
+                                            <div class="col"><img src="./images/React-Logo.svg" height="70" width="70">
+                                            </div>
+                                            <div class="col"><img src="./images/Bootstrap-Logo.svg" height="70"
+                                                    width="70"></div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Section -->
+            <section class="projects py-5" id="projects">
+                <h2 class="text-center neon fw-bold display-5">Projects</h2>
+                <p class="text-center fs-4 mb-5">All of my projects i have been working on so far.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <!-- Mardi Gras Card -->
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fw-bold fs-4">Mardi Gras</h5>
+                                            <hr class="mt-0">
+                                            <p class="card-text text-center">This is the first ever project i did. It is
+                                                styled
+                                                similar to the Mardi Gras Official Site. Uses basic knowledge.
+                                            </p>
+                                            <hr>
+                                            <p class="card-text fw-bold text-center">Technologies Used: <br><span
+                                                    class="badge bg-primary rounded-pill">HTML</span>
+                                                <span class="badge bg-secondary rounded-pill">CSS</span>
+                                                <span class="badge bg-warning rounded-pill text-dark">Javascript</span>
+                                                <span class="badge bg-success rounded-pill fs-6">Bootstrap</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer text-center my-2">
+                                            <a href="https://mardigras-jg.netlify.app/" class="btn btn-primary mt-2"
+                                                data-bs-toggle="tooltip" data-bs-title="Live Demo"
+                                                data-bs-placement="left" target="_blank">Demo</a>
+                                            <a href="https://github.com/RetNiX/Mardi_Grass.git"
+                                                class="btn btn-secondary mt-2" data-bs-toggle="tooltip"
+                                                data-bs-title="GitHub Code Link" data-bs-placement="right"
+                                                target="_blank"><i class="fa-solid fa-code"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <!-- TechIt Card -->
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fw-bold fs-4">Tech-It</h5>
+                                            <hr class="mt-0">
+                                            <p class="card-text text-center">My second project. Trying to create
+                                                a shopping
+                                                website.
+                                                Not complete yet. Very basic.
+                                            </p>
+                                            <hr>
+                                            <p class="card-text fw-bold text-center">Technologies Used: <br><span
+                                                    class="badge bg-primary rounded-pill">HTML</span>
+                                                <span class="badge bg-secondary rounded-pill">CSS</span>
+                                                <span class="badge bg-warning rounded-pill text-dark">Javascript</span>
+                                                <span class="badge bg-success rounded-pill fs-6">Bootstrap</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer text-center my-2">
+                                            <a href="https://techit-jg.netlify.app/" class="btn btn-primary mt-2"
+                                                onclick="" data-bs-toggle="tooltip" data-bs-title="Live Demo"
+                                                data-bs-placement="left" target="_blank">Demo</a>
+                                            <a href="https://github.com/RetNiX/TechIt.git"
+                                                class="btn btn-secondary mt-2" onclick="" data-bs-toggle="tooltip"
+                                                data-bs-title="GitHub Code Link" data-bs-placement="right"
+                                                target="_blank"><i class="fa-solid fa-code"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <!-- MyAccount Card -->
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fw-bold fs-4">My-Account</h5>
+                                            <hr class="mt-0">
+                                            <p class="card-text text-center">Third project. Mostly written in
+                                                JS. Built a simple web
+                                                interface for bank account balance.
+                                            </p>
+                                            <hr>
+                                            <p class="card-text fw-bold text-center">Technologies Used: <br><span
+                                                    class="badge bg-primary rounded-pill">HTML</span>
+                                                <span class="badge bg-secondary rounded-pill">CSS</span>
+                                                <span
+                                                    class="badge bg-warning rounded-pill text-dark fs-6">Javascript</span>
+                                                <span class="badge bg-success rounded-pill">Bootstrap</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer text-center my-2">
+                                            <a href="https://myaccount-jg.netlify.app/" class="btn btn-primary mt-2"
+                                                onclick="" data-bs-toggle="tooltip" data-bs-title="Live Demo"
+                                                data-bs-placement="left" target="_blank">Demo</a>
+                                            <a href="https://github.com/RetNiX/MyAccount.git"
+                                                class="btn btn-secondary mt-2" onclick="" data-bs-toggle="tooltip"
+                                                data-bs-title="GitHub Code Link" data-bs-placement="right"
+                                                target="_blank"><i class="fa-solid fa-code"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <!-- ManageU Card -->
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fw-bold fs-4">Manage-U</h5>
+                                            <hr class="mt-0">
+                                            <p class="card-text text-center">Forth project in my course. Its a
+                                                simple task
+                                                manager with basic interface.
+                                            </p>
+                                            <hr>
+                                            <p class="card-text fw-bold text-center">Technologies Used: <br><span
+                                                    class="badge bg-primary rounded-pill">HTML</span>
+                                                <span class="badge bg-secondary rounded-pill">CSS</span>
+                                                <span
+                                                    class="badge bg-info rounded-pill text-dark fs-6">Typescript</span>
+                                                <span class="badge bg-success rounded-pill">Bootstrap</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer text-center my-2">
+                                            <a href="https://manageu-jg.netlify.app/" class="btn btn-primary mt-2"
+                                                onclick="" data-bs-toggle="tooltip" data-bs-title="Live Demo"
+                                                data-bs-placement="left" target="_blank">Demo</a>
+                                            <a href="https://github.com/RetNiX/ManageUu.git"
+                                                class="btn btn-secondary mt-2" onclick="" data-bs-toggle="tooltip"
+                                                data-bs-title="GitHub Code Link" data-bs-placement="right"
+                                                target="_blank"><i class="fa-solid fa-code"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <!-- Memory Game Card -->
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fw-bold fs-4">Memory Game</h5>
+                                            <hr class="mt-0">
+                                            <p class="card-text">Self-made project. Tried to build a simple memory
+                                                game using the Pokemon API.
+                                            </p>
+                                            <hr>
+                                            <p class="card-text fw-bold text-center">Technologies Used: <br><span
+                                                    class="badge bg-primary rounded-pill">HTML</span>
+                                                <span class="badge bg-secondary rounded-pill">CSS</span>
+                                                <span
+                                                    class="badge bg-warning rounded-pill text-dark fs-6">Javascript</span>
+                                                <span class="badge bg-dark rounded-pill fs-6">REST-API</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer text-center my-2">
+                                            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="tooltip"
+                                                data-bs-title="Live Demo" data-bs-placement="left"
+                                                disabled>Demo</button>
+                                            <button type="button" class="btn btn-secondary mt-2"
+                                                data-bs-toggle="tooltip" data-bs-title="GitHub Code Link"
+                                                data-bs-placement="right" disabled><i
+                                                    class="fa-solid fa-code"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <div class="row form-design pt-5">
+                        <div class="col-lg-6">
+                            <h2 class="gradient-text neon text-center mb-4">Contact Us</h2>
+                            <form id="contactForm">
+                                <div class="mb-4 form-floating">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Enter your name" required>
+                                    <label for="name" class="form-label">Name:</label>
+                                </div>
+                                <div class="mb-4 form-floating">
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                        placeholder="Enter your last name" required>
+                                    <label for="lastName" class="form-label">Last Name:</label>
+                                </div>
+                                <div class="mb-4 form-floating">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter your email" required>
+                                    <label for="email" class="form-label">Email Address:</label>
+                                </div>
+                                <div class="mb-4 form-floating">
+                                    <textarea class="form-control" id="message" name="message" rows="10"
+                                        placeholder="Enter your message" required></textarea>
+                                    <label for="message" class="form-label">Write Whatever:</label>
+                                </div>
+                                <div class="status mb-2"></div>
+                                <button class="btn btn-secondary c-btn c-btn-shine c-btn-ghost c-btn-main mb-5"
+                                    type="submit" onclick="validateForm()">Submit to
+                                    Me</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 p-1">
+                            <h2 class="gradient-text mb-4 neon">Hello again,</h2>
+                            <hr>
+                            <p class="fs-5">If you liked what you saw so far,<br> and you want to find me, here are some
+                                of
+                                my contact
+                                info. <br> Or just use the form <i class="fa-regular fa-face-smile-wink"
+                                    style="color: #f79308;"></i></p>
+                            <h4 class="neon mt-4"><i class="fa-solid fa-phone mx-2"></i>Phone:</h4>
+                            <p class="fs-5">(+972) - 545265688</p>
+                            <h4 class="neon mt-4"><i class="fa-solid fa-at mx-2"></i>Email:</h4>
+                            <p class="fs-5">kochick16@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer Section -->
+        <footer class="footer pt-1">
+            <hr>
+            <!-- Social Links -->
+            <div class="container p-4 pb-3 text-center mb-3">
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1 mx-3" style="background-color: #3b5998;" href="#!"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1 mx-3" style="background-color: #ac2bac;"
+                    href="https://www.instagram.com/joni_greenberg/" role="button"><i class="fab fa-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1 mx-3" style="background-color: #0082ca;" href="#!"
+                    role="button"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Github -->
+                <a class="btn btn-primary btn-floating m-1 mx-3" style="background-color: #333333;"
+                    href="https://github.com/RetNiX?tab=repositories" role="button"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="text-center p-3 neon" style="background-color: rgba(0, 0, 0, 0.2);">
+                Copyright © 2023 Made with <i class="fa-solid fa-heart" style="color: #f60434;"></i> by Joni.G
+            </div>
+        </footer>
+        <!-- Bootstrap JS -->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Personal JS -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+
+</html>

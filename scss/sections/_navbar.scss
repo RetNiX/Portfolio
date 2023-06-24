@@ -1,0 +1,21 @@
+/* @use '../custom' as *; */
+
+.menu {
+    background: linear-gradient(to top, #621e6a, #611f6f, #5f1f74, #5e2179, #5b227e, #5b2180, #5a2181, #5a2083, #5d1d82, #601a81, #62167f, #65127e);
+    li {
+        padding-right: 0.8rem;
+        a {
+            color: $white;
+            font-weight: 800;
+            font-size: 1.8rem;
+        }
+    }
+    @media (min-width: 768px) {
+        padding-right: 0;
+    }
+}
+@media (min-width: 992px) {
+    .navbar {
+        height: 4rem;
+    }
+}

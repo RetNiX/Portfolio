@@ -1,0 +1,88 @@
+// White and Gray Colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// Different Colors
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #ff7300;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+$space:   #2C235F;
+
+// Theme Colors
+$primary:       $space;
+$secondary:     $teal;
+$success:       $green;
+
+// Font Variables
+$font-family-sans-serif:
+// Cross-platform generic font family (default user interface font)      
+system-ui, 
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Windows
+"Poltawski Nowy",
+// Android
+Roboto,
+// older macOS and iOS
+"Helvetica Neue",
+// Linux
+"Noto Sans", 
+"Liberation Sans",
+// Basic web fallback
+Arial,
+// Sans serif fallback
+sans-serif, 
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:            --font-family-sans-serif;
+/* Custom Neon Text */
+.neon {
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff,
+      0 0 80px rgb(158, 5, 247),
+      0 0 90px rgb(158, 5, 247),
+      0 0 100px rgb(158, 5, 247),
+      0 0 150px rgb(158, 5, 247);
+  }
+  /* General P color */
+p {
+    color: $orange;
+}
+
+/* Navbar SASS Section */
+@import "./sections/navbar";
+/* Intro SASS Section */
+@import "./sections/intro";
+/* About SASS Section */
+@import "./sections/about";
+/* Projects SASS Section */
+@import "./sections/_projects.scss";
+/* Contact SASS Section */
+@import "./sections/contact";
+/* Footer SASS Section */
+@import "./sections/footer";
+// Google Font: "Poltawski Nowy"
+@import 'https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;600&display=swap';
+/* Importing Bootstrap 5.3.0 */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+/* Button Component Use */
+@import "./components/buttons";

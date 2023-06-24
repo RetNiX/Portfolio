@@ -1,0 +1,91 @@
+/* .button-one {
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    border-radius:5px;
+    box-shadow: 0 6px #95a5a6;
+}
+  
+.button-one:hover{
+    box-shadow: 0 6px #777676 ;
+}
+  
+.button-one:active {
+    box-shadow: 0 2px #95a5a6;
+    transform: translateY(4px);
+} */
+:root {
+    // Buttons Vars for HSL
+    --saturation: 100%;
+    --lightness: 53%;
+    --alpha: 1;
+}
+.c-btn {
+    --hue: 16;
+    position: relative;
+    padding: 0.6rem 0.6rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: indianred;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+    border: 3px solid hsl(var(--hue), var(--saturation), var(--lightness));
+    outline: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition: 0.25s;
+    border-radius: 5px;
+  
+    &:hover {
+      background: hsl(var(--hue), var(--saturation), 50%);
+    }
+  
+    &-main {
+      --hue: 21;
+    }
+  
+    &-ghost {
+      color: hsl(var(--hue), var(--saturation), var(--lightness));
+      background-color: transparent;
+      border-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  
+      &:hover {
+        color: rgb(247, 148, 19); // Text color when hovering
+        font-weight: 600;
+      }
+    }
+
+    &-shine {
+      color: rgb(188, 255, 33); // Text color when not hovering
+      font-weight: 600;
+  
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          hsla(var(--hue), var(--saturation), var(--lightness), 0.5),
+          transparent
+        );
+        transform: translateX(-100%);
+        transition: 0.6s;
+      }
+  
+      &:hover {
+        background: transparent;
+        box-shadow: 0 0 20px 10px hsla(var(--hue), var(--saturation), var(--lightness), 0.5);
+      }
+  
+      &:hover::before {
+        transform: translateX(100%);
+      }
+    }
+}
